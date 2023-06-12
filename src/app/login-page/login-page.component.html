@@ -1,0 +1,35 @@
+<body>
+  <br><br><br><br><br>
+  <img src="assets/cimbImage.png" class="logo">
+  <div class="center">
+    <br><br>
+  <div class="container">
+    <div class="word-size">
+      <br><br><br><br><br>
+      <p>Hello There</p>
+      <br>
+      <p>Welcome to the Login Page</p>
+      <br>
+      <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Email</mat-label>
+          <input matInput placeholder="Username" type="email">
+          <mat-icon matSuffix>account_box</mat-icon>
+        </mat-form-field>
+      </p>
+      <p>
+        <mat-form-field appearance="fill">
+          <mat-label>Password</mat-label>
+          <input matInput placeholder="Password" type="password">
+          <mat-icon matSuffix>password</mat-icon>
+        </mat-form-field>
+      </p>
+        <div class="button">
+          <button mat-flat-button color="red" style="font-size: 20px;">Login</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>
